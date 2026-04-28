@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/Shafi/OneDrive/Desktop/New%20folder/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jemspoolad</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #ff3c00;
+    padding: 20px;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    padding: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ff3c00;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form {
+    display: none;
+    max-width: 300px;
+    margin: auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jemspoolad Web Design 🚀</h1>
+<p>I create websites for businesses and customers.</p>
+
+    <nav>
+        <a onclick="home()">Home</a>
+        <a onclick="login()">Login</a>
+        <a onclick="signup()">Signup</a>
+    </nav>
+</header>
+
+<div class="container" id="home"><h2>My Services</h2>
+
+<p>✅ Business Websites</p>
+<p>✅ Fitness Websites</p>
+<p>✅ Restaurant Websites</p>
+<p>✅ Online Shop Websites</p>
+<p>✅ Login &amp; Signup Systems</p>
+    <h2>Welcome to Jemspoolad Website</h2>
+    <p>Email: jemspoolad@gmail.com</p>
+<p>WhatsApp: +44 7375700725</p>
+    <p>This is my personal website. You can find me online!</p>
+    <button class="btn" onclick="signup()">Join Now</button>
+</div>
+
+<div class="form" id="login">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button class="btn">Login</button>
+</div>
+
+<div class="form" id="signup">
+    <h2>Signup</h2>
+    <input type="text" placeholder="Username">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button class="btn">Create Account</button>
+</div>
+
+<script>
+function hide() {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("login").style.display = "none";
+    document.getElementById("signup").style.display = "none";
+}
+
+function home() {
+    hide();
+    document.getElementById("home").style.display = "block";
+}
+
+function login() {
+    hide();
+    document.getElementById("login").style.display = "block";
+}
+
+function signup() {
+    hide();
+    document.getElementById("signup").style.display = "block";
+}
+</script>
+
+
+</body></html>
